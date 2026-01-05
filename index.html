@@ -242,6 +242,19 @@ manga
   // Call changeColor immediately on page load to set the initial color
   changeColor();
 </script>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 </body>
 
 </html>
+
